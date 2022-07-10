@@ -1,0 +1,373 @@
+.landingWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #FD5334;
+}
+.landingWrapper .landingWrapperCol {
+  width: 50%;
+}
+.landingWrapper .landingWrapperCol .landingTextWrapper {
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  width: 665px;
+  margin-left: 85px;
+  margin-top: 24.535vh;
+}
+@media screen and (max-width: 710px) {
+  .landingWrapper .landingWrapperCol .landingTextWrapper {
+    margin-left: 12vw !important;
+  }
+}
+@media screen and (max-width: 530px) {
+  .landingWrapper .landingWrapperCol .landingTextWrapper {
+    margin-left: 11vw !important;
+  }
+}
+.landingWrapper .landingWrapperCol .landingTextWrapper h1 {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 110px;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 1200px) {
+  .landingWrapper .landingWrapperCol .landingTextWrapper h1 {
+    max-width: 550px;
+  }
+}
+@media screen and (max-width: 1175px) {
+  .landingWrapper .landingWrapperCol .landingTextWrapper h1 {
+    max-width: 400px !important;
+  }
+}
+@media screen and (max-width: 1035px) {
+  .landingWrapper .landingWrapperCol .landingTextWrapper h1 {
+    font-size: 7.729vw;
+  }
+}
+@media screen and (max-width: 845px) {
+  .landingWrapper .landingWrapperCol .landingTextWrapper h1 {
+    max-width: 33vw !important;
+    line-height: 13vw;
+  }
+}
+.landingWrapper .landingWrapperCol .landingTextWrapper span {
+  color: #212529;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 1490px) {
+  .landingWrapper .landingWrapperCol .landingTextWrapper span {
+    display: block;
+  }
+}
+.landingWrapper .landingWrapperCol .landingTextWrapper button {
+  margin-top: 100px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #212529;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  padding: 13px 24px;
+  outline: unset;
+  border: unset;
+  border-radius: 8px;
+  padding-right: 50px;
+  background: url("@/assets/icons/btnVector.svg") no-repeat right center, #212529;
+  background-position-x: 90%;
+  border: 4px solid #FD5334;
+}
+@media screen and (max-width: 710px) {
+  .landingWrapper .landingWrapperCol .landingTextWrapper button {
+    width: 26vw !important;
+    background: #212529;
+    padding: 5px 0;
+  }
+}
+.landingWrapper .landingWrapperCol .landingTextWrapper button:hover {
+  border: 4px solid rgba(194, 165, 249, 0.8);
+}
+.landingWrapper .landingWrapperCol.scrollable {
+  height: 100vh;
+  overflow-y: scroll;
+}
+.landingWrapper .landingWrapperCol.scrollable .landingIMGWrapper {
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 1575px) {
+  .landingWrapper .landingWrapperCol.scrollable .landingIMGWrapper {
+    height: 100vh;
+  }
+}
+.landingWrapper .landingWrapperCol.scrollable .landingIMGWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.landingWrapper ::-webkit-scrollbar {
+  display: none;
+}
+
+.personalInfoWrapper {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.personalInfoWrapper .personalWrapperCol {
+  width: 50%;
+}
+.personalInfoWrapper .personalWrapperCol .personalIMGWrapper {
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 1575px) {
+  .personalInfoWrapper .personalWrapperCol .personalIMGWrapper {
+    height: 100vh;
+  }
+}
+.personalInfoWrapper .personalWrapperCol .personalIMGWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+@media screen and (max-width: 1575px) {
+  .personalInfoWrapper .personalWrapperCol .personalIMGWrapper img {
+    object-fit: cover;
+  }
+}
+.personalInfoWrapper .personalWrapperCol .pictureText {
+  width: 425px;
+  position: absolute;
+  top: 43%;
+  left: 18.5%;
+  font-family: "Nunito", sans-serif;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1225px) {
+  .personalInfoWrapper .personalWrapperCol .pictureText {
+    left: 20.939vw;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .personalInfoWrapper .personalWrapperCol .pictureText {
+    left: 25vw;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .personalInfoWrapper .personalWrapperCol .pictureText {
+    left: 35vw;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .personalInfoWrapper .personalWrapperCol .pictureText {
+    display: none;
+  }
+}
+.personalInfoWrapper .personalWrapperCol .pictureText .quote {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 26px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  color: #212529;
+}
+@media screen and (max-width: 1225px) {
+  .personalInfoWrapper .personalWrapperCol .pictureText .quote {
+    font-size: 2.122vw;
+    max-width: 34.694vw;
+    line-height: 4.082vw;
+    margin-bottom: 1.633vw;
+  }
+}
+.personalInfoWrapper .personalWrapperCol .pictureText .author {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 32px;
+  color: #E5E6E8;
+}
+@media screen and (max-width: 1225px) {
+  .personalInfoWrapper .personalWrapperCol .pictureText .author {
+    font-size: 1.959vw;
+  }
+}
+.personalInfoWrapper .personalWrapperCol.form .personalWrapperContent {
+  padding-left: 50px;
+  padding-right: 175px;
+}
+@media screen and (max-width: 1125px) {
+  .personalInfoWrapper .personalWrapperCol.form .personalWrapperContent {
+    padding-right: 15.556vw;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .personalInfoWrapper .personalWrapperCol.form .personalWrapperContent {
+    padding-right: 5vw;
+  }
+}
+.personalInfoWrapper .personalWrapperCol.form .personalInfoTextWrapper {
+  font-weight: 600;
+  margin-top: 110px;
+}
+.personalInfoWrapper .personalWrapperCol.form .personalInfoTextWrapper * {
+  font-family: "Open Sans", sans-serif;
+}
+.personalInfoWrapper .personalWrapperCol.form .personalInfoTextWrapper h2 {
+  font-size: 32px;
+  line-height: 48px;
+  color: #000;
+}
+.personalInfoWrapper .personalWrapperCol.form .personalInfoTextWrapper p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #95939A;
+}
+.personalInfoWrapper .personalWrapperCol.form .personalWrapperForm {
+  margin-top: 45px;
+}
+.personalInfoWrapper .personalWrapperCol .navigationWrapper {
+  padding-top: 60px;
+}
+
+.chessInfoWrapper {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.chessInfoWrapper .chessWrapperCol {
+  width: 50%;
+}
+.chessInfoWrapper .chessWrapperCol.form .chessWrapperContent {
+  padding-left: 50px;
+  padding-right: 110px;
+}
+.chessInfoWrapper .chessWrapperCol.form .chessInfoTextWrapper {
+  font-weight: 600;
+  margin-top: 110px;
+}
+.chessInfoWrapper .chessWrapperCol.form .chessInfoTextWrapper * {
+  font-family: "Open Sans", sans-serif;
+}
+.chessInfoWrapper .chessWrapperCol.form .chessInfoTextWrapper h2 {
+  font-size: 32px;
+  line-height: 48px;
+  color: #000;
+}
+.chessInfoWrapper .chessWrapperCol.form .chessInfoTextWrapper p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #95939A;
+}
+.chessInfoWrapper .chessWrapperCol.form .chessWrapperForm {
+  margin-top: 45px;
+}
+@media screen and (max-width: 845px) {
+  .chessInfoWrapper .chessWrapperCol.form .chessWrapperForm .navButtonWrapper {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+  }
+}
+.chessInfoWrapper .chessWrapperCol .navigationWrapper {
+  padding-top: 60px;
+}
+.chessInfoWrapper .chessWrapperCol .chessIMGWrapper {
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 1575px) {
+  .chessInfoWrapper .chessWrapperCol .chessIMGWrapper {
+    height: 100vh;
+  }
+}
+.chessInfoWrapper .chessWrapperCol .chessIMGWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+@media screen and (max-width: 1575px) {
+  .chessInfoWrapper .chessWrapperCol .chessIMGWrapper img {
+    object-fit: cover;
+  }
+}
+.chessInfoWrapper .chessWrapperCol .chessIMGWrapper .pictureText {
+  width: 615px;
+  position: absolute;
+  top: 36.5%;
+  left: 22.5%;
+  font-family: "Nunito", sans-serif;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1400px) {
+  .chessInfoWrapper .chessWrapperCol .chessIMGWrapper .pictureText {
+    max-width: 43.929vw;
+  }
+}
+@media screen and (max-width: 745px) {
+  .chessInfoWrapper .chessWrapperCol .chessIMGWrapper .pictureText {
+    display: none;
+  }
+}
+.chessInfoWrapper .chessWrapperCol .chessIMGWrapper .pictureText .quote {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 26px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  color: #212529;
+}
+.chessInfoWrapper .chessWrapperCol .chessIMGWrapper .pictureText .author {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 32px;
+  color: #093F68;
+  text-align: end;
+}
+
+.completeWrapper {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.completeWrapper .completeWrapperCol {
+  width: 50%;
+  height: 100vh;
+}
+.completeWrapper .completeWrapperCol.done {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.completeWrapper .completeWrapperCol.done .completeDoneWrapper {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+.completeWrapper .completeWrapperCol.done .completeDoneWrapper h3 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 54px;
+  margin-top: 20px;
+}
+.completeWrapper .completeIMGWrapper {
+  height: 100%;
+}
+.completeWrapper .completeIMGWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=Wrappers.css.map */

@@ -1,0 +1,157 @@
+@import '../../assets/style/variables'
+.chessForm
+    display: grid
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr
+    gap: 25px
+    @media screen and (max-width: 845px)
+        display: flex
+        flex-direction: column
+        gap: 25px
+    *
+        font-family: 'Open Sans', sans-serif
+    .selectParent
+        .selectWrapper
+            width: 390px
+            position: relative
+            padding: 1px
+            cursor: pointer
+            p
+                width: 100%
+                padding: 8px 64px 8px 16px
+                font-weight: 400
+                font-size: 16px
+                line-height: 24px
+                color: $main
+                background-color: $default
+                border: unset
+                outline: unset
+                border-radius: 4px
+                box-shadow: 0px 1px 0 0 #00000020
+            span
+                color: #DC3545
+                option
+                    font-weight: 400
+                    font-size: 17px
+                    line-height: 30px
+                    color: #000
+                    outline: unset
+                    border: 1px solid #B9B4C34D
+                    box-shadow: 0 2px 4px 0 #0000001A
+                    border-radius: 4px
+            img
+                transform: rotate(180deg)
+                position: absolute
+                right: 20.5px
+                bottom: 16.5px
+                &.open
+                    transform: rotate(0deg)
+        .optionsWrapper, .gmWrapper
+            border: 1px solid #B9B4C34D
+            border-radius: 4px
+            margin-left: 15px
+            box-shadow: 0 2px 4px 0 #0000001A
+            position: absolute
+            margin-top: 5px
+            z-index: 10
+            p
+                cursor: pointer
+                padding: 8px 285px 8px 20px
+                background-color: $default
+                font-weight: 400
+                font-size: 18px
+                line-height: 30px
+            p:hover
+                font-weight: 600
+        .hidden
+            display: none
+        .active
+            display: block !important
+        span
+            color: #817D7D
+            font-size: 16px
+            line-height: 24px
+        .gmWrapper
+            overflow-y: scroll
+            max-height: 420px
+
+            padding: 16px 20px 35px 28px
+            margin: 0
+            margin-top: 5px
+            background-color: $default
+
+            @media screen and (max-width: 845px)
+                padding: 16px 10px 35px 10px
+            .gmParent
+                margin-top: 15px
+                cursor: pointer
+                .gmBar
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    width: 390px
+                    @media screen and (max-width: 845px)
+                        width: 325px
+                    p
+                        padding: 0
+                        white-space: nowrap
+                        font-size: 20px
+                        line-height: 30px
+                    .gmPicture
+                        width: 100px
+                        height: 72px
+                        border-radius: 4px
+                        img
+                            width: 100%
+                            height: 100%
+                            object-fit: cover
+            .gmParent:nth-child(2)
+                margin-top: 8px !important
+            .gmParent:hover
+                p
+                    font-weight: 600
+        ::-webkit-scrollbar
+            width: 4px
+            border-radius: 4px
+            margin-rigth: 25px
+        ::-webkit-scrollbar-track 
+            background: #E9ECEF
+        ::-webkit-scrollbar-thumb 
+            background: #CBCFD2
+        &.radio
+            margin-top: 40px
+            @media screen and (max-width: 845px)
+                margin-top: 0
+            .radioHeader
+                font-weight: 400
+                font-size: 20px
+                line-height: 24px
+                span
+                    color: #DC3545
+            .radioParent
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                gap: 20px
+                .radioWrapper
+                    display: flex
+                    gap: 10px
+                    margin-top: 20px
+                    input
+                        cursor: pointer
+                        margin: 0
+                        width: 20px
+                        height: 20px
+#select0
+    grid-row: 1 / 2
+    grid-column: 1 / 3
+#select1
+    grid-row: 1 / 2
+    grid-column: 3 / 5
+#select2
+    grid-row: 2 / 3
+    grid-column: 1 / 5
+select
+    -webkit-appearance: none
+    -moz-appearance: none
+    text-indent: 1px
+    text-overflow: ''

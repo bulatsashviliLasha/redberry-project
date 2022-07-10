@@ -1,0 +1,103 @@
+.headerWrapper {
+  width: 100%;
+  background-color: #7025FB;
+  padding: 30px 0;
+}
+.headerWrapper .logoWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-left: 60px;
+}
+.headerWrapper .logo {
+  margin-bottom: 5px;
+}
+
+.locationWrapper {
+  width: 100%;
+  padding: 30px 0 !important;
+  border-bottom: 1px solid rgba(185, 180, 195, 0.3019607843);
+}
+.locationWrapper p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212529;
+  text-transform: capitalize;
+  margin-left: 50px;
+}
+
+.navigationWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 75px;
+  position: relative;
+}
+@media screen and (max-width: 855px) {
+  .navigationWrapper {
+    gap: 8.772vw;
+  }
+}
+@media screen and (max-width: 630px) {
+  .navigationWrapper {
+    gap: 0px;
+  }
+}
+.navigationWrapper * {
+  font-family: "Open Sans", sans-serif;
+}
+.navigationWrapper .wizardWrapper {
+  text-align: center;
+}
+.navigationWrapper .wizardWrapper .pageWrapper {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #E5E6E8;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigationWrapper .wizardWrapper .pageWrapper.current span {
+  color: #000 !important;
+}
+.navigationWrapper .wizardWrapper .pageWrapper.active {
+  background-color: #E9FAF1;
+  border: none;
+}
+.navigationWrapper .wizardWrapper .pageWrapper.done {
+  background: url("../../assets/icons/navigationSnackDone.svg") no-repeat center, #E9FAF1;
+}
+.navigationWrapper .wizardWrapper .pageWrapper.done span {
+  color: transparent !important;
+}
+.navigationWrapper .wizardWrapper .pageWrapper span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #95939A;
+  vertical-align: middle;
+}
+.navigationWrapper .wizardWrapper p {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+}
+.navigationWrapper .wizardHR {
+  position: absolute;
+  border: 1px solid rgba(185, 180, 195, 0.3019607843);
+  width: 170px;
+  top: 62%;
+  left: 14%;
+}
+@media screen and (max-width: 1919px) {
+  .navigationWrapper .wizardHR {
+    display: none;
+  }
+}/*# sourceMappingURL=HeaderSnack.css.map */

@@ -1,0 +1,40 @@
+@import '../../assets/style/variables'
+.errorParent
+    background-color: $default
+    width: 350px
+    padding: 10px 12px
+    border: 1px #0000001A solid
+    border-radius: 4px
+    box-shadow: 0 8px 16px #00000026
+    margin-top: 10px
+    position: relative
+    *
+        font-family: 'Open Sans', sans-serif
+    .errorHeader
+        display: flex
+        justify-content: flex-start
+        .errTitle
+            color: #DC3545
+            font-weight: 600
+            font-size: 14px
+            line-height: 21px
+            margin-left: 8px
+    .closeIcon
+        position: absolute
+        right: 13.5px
+        top: 14.5px
+        cursor: pointer
+    .errDesc
+        margin-top: 20px
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        color: $main
+
+.hide
+    animation: fadeout 2s ease-in-out forwards
+@keyframes fadeout
+    0%
+        opacity: 1
+    100%
+        opacity: 0

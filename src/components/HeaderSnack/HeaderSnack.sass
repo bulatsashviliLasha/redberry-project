@@ -1,0 +1,82 @@
+@import '../../assets/style/variables'
+.headerWrapper
+    width: 100%
+    background-color: $headerSnack
+    padding: 30px 0
+
+    .logoWrapper
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        gap: 10px
+        margin-left: 60px
+    .logo
+        margin-bottom: 5px
+.locationWrapper
+    width: 100%
+    padding: 30px 0 !important
+    border-bottom: 1px solid #B9B4C34D
+    p
+        font-family: 'Open Sans', sans-serif
+        font-weight: 600
+        font-size: 16px
+        line-height: 24px
+        color: $main
+        text-transform: capitalize
+        margin-left: 50px
+.navigationWrapper
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    gap: 75px
+    position: relative
+    @media screen and (max-width: 855px)
+        gap: 8.772vw
+    @media screen and (max-width: 630px)
+        gap: 0px
+    *
+        font-family: 'Open Sans', sans-serif
+
+    .wizardWrapper
+        text-align: center
+        .pageWrapper
+            margin: 0 auto
+            width: 40px
+            height: 40px
+            border: 1px solid #E5E6E8
+            border-radius: 8px
+
+            display: flex
+            justify-content: center
+            align-items: center
+            &.current
+                span
+                    color: #000 !important
+            &.active
+                background-color: #E9FAF1
+                border: none
+            &.done
+                background: url("../../assets/icons/navigationSnackDone.svg") no-repeat center, #E9FAF1
+                span
+                    color: transparent !important
+            span
+                font-size: 18px
+                font-weight: 700
+                line-height: 25px
+                color: #95939A
+                vertical-align: middle
+        p
+            margin-top: 5px
+            font-size: 16px
+            font-weight: 400
+            line-height: 24px
+            color: #000
+
+    .wizardHR
+        position: absolute
+        border: 1px solid #B9B4C34D
+        width: 170px
+        top: 62%
+        left: 14%
+        @media screen and (max-width: 1919px) 
+            display: none

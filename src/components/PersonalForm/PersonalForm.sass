@@ -1,0 +1,61 @@
+@import '../../assets/style/variables'
+@import '../../assets/style/mixins'
+input
+    display: block
+    margin-top: 40px
+    @include default-input
+
+    &.active
+        @include input-active
+    &.error
+        @include input-error
+    &.valid
+        @include input-valid
+
+input:hover::placeholder
+    color: #21252980
+
+::placeholder
+    color: $main
+
+.navButtonWrapper
+    width: 100%
+    margin-top: 85px
+    display: flex
+    justify-content: space-between
+
+    @media screen and (max-width: 620px)
+        flex-direction: column
+        gap: 10px
+        margin-top: 30px
+
+    .nextBtn
+        @include default-btn
+        padding-right: 60px
+        background: url(../../assets/icons/btnVector.svg) no-repeat right center, #212529
+        background-position-x: 80%
+        @media screen and (max-width: 620px)
+            padding-right: 45px
+            background-position-x: 65%
+    .backBtn
+        @include default-mini-btn
+    .backBtn:hover
+        @include default-mini-btn-hover
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+input[type=number]
+    -moz-appearance: textfield
+
+.errorsWrapper
+    position: absolute
+    top: 23%
+    right: 5%
+    z-index: 10
+    margin-top: 10px
+
+.valid::-webkit-calendar-picker-indicator
+    display: none
+    -webkit-appearance: none

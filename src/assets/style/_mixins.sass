@@ -1,0 +1,58 @@
+@mixin default-btn
+    font-family: 'Open Sans', sans-serif
+    background-color: $defaultBtn
+    color: $default
+    cursor: pointer
+
+    font-size: 20px
+    line-height: 27px
+    font-weight: 400
+
+    padding: 13px 24px
+    outline: unset
+    border: unset
+    border-radius: 8px
+@mixin default-btn-hover
+    border: 4px solid #C2A5F9CC
+
+@mixin default-mini-btn
+    @include default-btn
+    color: $main
+    background-color: transparent
+    border: 1px solid $main
+
+@mixin default-mini-btn-hover
+    background-color: #B9B4C34D
+    border: 1px solid #C2A5F9CC
+
+@mixin default-input
+    border: unset
+    outline: unset
+
+    font-family: 'Open Sans', sans-serif
+    font-weight: 400
+    font-size: 20px
+    line-height: 24px
+
+    width: 100%
+    padding: 8px 16px
+    border-bottom: 1px solid #21252932
+
+@mixin input-hover
+    @include default-input
+    cursor: pointer
+
+@mixin input-active
+    @include default-input
+    background-color: $activeInput
+
+@mixin input-valid
+    @include default-input
+    background-color: transparent
+    background: url(@/assets/icons/validVector.svg) no-repeat right center
+    background-position-x: 98.5%
+
+@mixin input-error
+    @include default-input
+    color: #DC3545
+    background-color: $dangerInput

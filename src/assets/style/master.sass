@@ -1,0 +1,27 @@
+@import variables
+@import mixins
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+.errorPageWrapper
+    height: 100vh
+    text-align: center
+    vertical-align: middle
+    background: $landingBackground
+    *
+        font-family: 'Open Sans', sans-serif
+    h1
+        margin-top: 250px
+        text-align: center
+        font-size: 150px
+        color: $main
+    h2
+        font-size: 60px
+        color: $default
+    button
+        @include default-btn
+        margin-top: 40px
+        border: 4px solid transparent
+    button:hover
+        @include default-btn-hover
